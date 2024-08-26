@@ -1,11 +1,10 @@
 
 import Header from "./Сomponents/header/Header";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import MoviePages from "./Pages/MoviePages";
-import CardMovie from "./Сomponents/CardMovie";
-import PopularMoviePages from "./Pages/PopularMoviePages";
+import MoviePages from "./Pages/MoviePage/MoviePages";
 import Search from "./Сomponents/Search";
-import HomePages from "./Pages/HomePages";
+import HomePages from "./Pages/homePage/HomePages";
+import ActorPage from "./Pages/actorPage/ActorPage";
 
 
 function App() {
@@ -18,7 +17,7 @@ function App() {
                     <Route path="/" element={<HomePages/>}/>
                     <Route path="/search" element={<Search/>} />
                     <Route path="/movie/:id" element={<MoviePages/>}/>
-                    {/*<Route path="/ingredient/:ingredient" element={<IngredientPage/>}/>*/}
+                    <Route path="/actor/:id" element={<ActorPage/>}/>
                 </Routes>
             </Router>
         </>

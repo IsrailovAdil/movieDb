@@ -1,23 +1,28 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import './style.scss'
+import logo from '../assets/pngegg (1).png'
 
 const Header = () => {
     return (
-        <header className="p-3 bg-dark text-white mb-5">
-            <div className="container">
-                <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="/public" className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                        <p className="fs-1">MovieDB</p>
+        <header className="header">
+            <div className="header-container">
+                <div className="header-content">
+                    <a href="/public" className="header-brand">
+                        <Link to={'/'}>
+                            <img src={logo} alt={'logo'}/>
+
+                        </Link>
+                        <p className="header-title">MovieDB</p>
                     </a>
 
-                    <ul className="nav col-12 col-lg-auto  mb-2 justify-content-end mb-md-0">
-                        <li><Link to={'/'} className="nav-link px-2 text-secondary">Home</Link></li>
-                        <li><Link to={'/search'} className="nav-link px-2 text-white">Search</Link></li>
-                        <li><a href="#" className="nav-link px-2 text-white">Pricing</a></li>
-                        <li><a href="#" className="nav-link px-2 text-white">FAQs</a></li>
-                        <li><a href="#" className="nav-link px-2 text-white">About</a></li>
+                    <ul className="header-nav">
+                        <li><Link to={'/'} className="nav-item text-secondary">Home</Link></li>
+                        <li><Link to={'/search'} className="nav-item text-white">Search</Link></li>
+                        <li><a href="#" className="nav-item text-white">Pricing</a></li>
+                        <li><a href="#" className="nav-item text-white">FAQs</a></li>
+                        <li><a href="#" className="nav-item text-white">About</a></li>
                     </ul>
-
                 </div>
             </div>
         </header>

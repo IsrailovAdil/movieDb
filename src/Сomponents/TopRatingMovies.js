@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import CardMovie from "./CardMovie";
+import CardMovie from "./CardMovie/CardMovie";
 
 const Mov_Key='e517fdd963d18169b695e97d2c1e3ff2';
 
@@ -17,11 +17,11 @@ const TopRatingMovies = () => {
 
     return (
 
-        <div>
-            <div className="container ">
-              <h2>Top rating</h2>
-            <CardMovie movies={movies}/>
-            </div>
+        <div >
+                <h2 style={{
+                    color: 'white'
+                }}>Top rating</h2>
+                <CardMovie movies={movies}/>
         </div>
 
     );

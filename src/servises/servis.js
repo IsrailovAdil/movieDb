@@ -8,6 +8,8 @@ export const handleGenerateApi=(endpoint)=>{
     return `${MovUrl}${endpoint}?${apiKey}&${Lang}`
 }
 
+
+
 export const handleShortList=(arr)=>{
     if(arr.length>10){
         return arr.slice(0,5)

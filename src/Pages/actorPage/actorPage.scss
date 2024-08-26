@@ -1,0 +1,98 @@
+.containerP {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #0d0d0e;
+  color: white;
+
+  .actor-info {
+    margin-bottom: 30px;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      .col-md-4 {
+        flex: 1;
+        max-width: 300px;
+        margin-bottom: 20px;
+
+        img {
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+
+      .col-md-8 {
+        flex: 2;
+        margin-left: 20px;
+
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 15px;
+        }
+
+        p {
+          margin-bottom: 10px;
+          font-size: 1rem;
+          line-height: 1.5;
+
+          strong {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .actor-movies {
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+
+      li {
+        .movie-title {
+          text-decoration: none;
+          color: inherit;
+
+          .card {
+            border: none;
+            background-color: #f8f9fa;
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+              transform: scale(1.05);
+            }
+
+            .card-img-top {
+              border-radius: 10px;
+              width: 100%;
+              height: auto;
+            }
+
+            .card-body {
+              padding: 10px;
+              text-align: center;
+
+              p {
+                margin: 0;
+                font-size: 1rem;
+                font-weight: 600;
+                color: #333;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

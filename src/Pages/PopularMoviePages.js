@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import CardMovie from "../Сomponents/CardMovie";
+import CardMovie from "../Сomponents/CardMovie/CardMovie";
 
 const Mov_Key='e517fdd963d18169b695e97d2c1e3ff2';
 const PopularMoviePages = () => {
@@ -17,11 +17,12 @@ const PopularMoviePages = () => {
 
 
     return (
-        <div>
-            <div className="container">
-                <h2>Popular Movies</h2>
+        <div >
+            <h2 style={{
+                color: 'white',
+                fontSize:'32px',
+            }}>Popular Movies</h2>
             <CardMovie movies={movies}/>
-            </div>
         </div>
     );
 };
